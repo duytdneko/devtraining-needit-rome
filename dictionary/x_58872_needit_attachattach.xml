@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Attachattach" max_length="40" name="x_58872_needit_attachattach" sizeclass="10" type="collection">
+        <element display="true" label="File name" max_length="255" name="u_file_name" type="string"/>
+        <element choice="3" label="Mainmain number" max_length="32" name="u_mainmain_number" reference="x_58872_needit_mainmain" type="reference">
+            <choice/>
+        </element>
+        <element label="Mainmain parent group" max_length="4000" name="u_mainmain_parent_group" reference="sys_user_group" type="glide_list"/>
+        <element label="Mainmain related group" max_length="4000" name="u_mainmain_related_group" reference="sys_user_group" type="glide_list"/>
+        <element label="Mainmain state" max_length="255" name="u_mainmain_state" read_only="true" type="string"/>
+        <index name="index">
+            <element name="u_mainmain_number"/>
+        </index>
+    </element>
+</database>
